@@ -3,84 +3,129 @@ body{
     background-color: #e2f0fb;
 }
 /* HEADER */
-#logo {
-    width: 200px;
+a#logo{
+    grid-column: 1/2;
+    grid-row: 1/2;
 }
-
-#perfiles{
-    display: block;
-    position: absolute;
-    right: 50px;
-    top: 60px;
+img#logo{
+    width: 100%;
 }
-#perfil{
-    position: absolute;
-    top: 50px;
-    right: 50px;
-    width: 100px;
+img#perfil{
+    width: 50%;
+}
+header{
+    display: grid;
+    grid-template-columns:repeat(6 , 1fr);
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+a#perfil{
+    width: 50%;
+    grid-column: 6/7;
+    grid-row: 1/2;
+    justify-self: end;
+}
+nav{
+    grid-column: 1/11;
+    grid-row: 2/3;
+    align-self: start;
 }
 /* FIN DE HEADER */
 
 /* INDEX */
+
 #pasoapaso{
     border-style: solid;
     border-color: black;
 }
+div#pasoapaso{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pasoapaso h1{
+    display: inline;
+}
 
 #pasoapaso a img{
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
-#imagenplan{
-    display: inline;
+section.inicio img{
+    width: 80%;
+    text-align: center;
+    border-radius: 20px;
 }
 
-#comentarios{
-    display: inline;
+section.inicio{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;    
 }
-
-#comentarios img{
-    width: 50px;
-    margin: 0px 20px;
+div#comentarios img{
+    width: 100%;
+    margin: 10px;
 }
-
-#comentarios h3{
-    width: 600px;
+div#comentarios h3{
+    margin: 10px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+    padding: 10px;
     background-color: #5271ff;
-    position: relative;
-    bottom: 520px;
-    left: 1000px;
 }
-
-#imagenplan img{
-    width: 600px;
-    margin: 100px;
+div#comentarios{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items:center;
+    gap:10px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    height: 100%;
 }
-
+.imagen1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.imagen2{
+    grid-column: 1/2;
+    grid-row: 2/3;    
+}
+.imagen3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
 /* FIN INDEX */
 
 /* LISTAS */
 ul {
     list-style-type: none;
-    display: flex;
-    background-color: #5271ff;
-    justify-content: center;
-    gap: 40px;
-}
-header{
     display: grid;
+    align-items: center;
+    background-color: #5271ff;
+    justify-content: space-around;
+    gap: 10px;
+    justify-items: center;
+    grid-template-columns: repeat(5 , 1fr);
 }
-
 ul a{
     text-decoration: none;
     color: black;
 }
 
 li{
-    padding: 40px;
+    padding: 10px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: x-large;
+    margin: 10px;
 }
 
 ul#filtro{
@@ -184,14 +229,6 @@ h1{
 }
 
 /* FOOTER */
-
-footer h5.redes{
-    display: inline;
-    position: relative;
-    left: 500px;
-    bottom: 100px;
-}
-
 footer img{
     width: 60px;
     height: 60px;
@@ -199,6 +236,9 @@ footer img{
 
 footer{
     font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 /* FIN FOOTER */
@@ -227,4 +267,46 @@ main.perfil input{
     font-size: xx-large;
     position: relative;
     right: 150px;
+}
+
+@media (max-width: 830px){
+    a#perfil{
+        display:none;
+    }
+    a#logo{
+        grid-column: 1/7;
+    }
+    header{
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul {
+        grid-template-rows: 5fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+        margin-bottom: 10px;
+        padding: 0
+    }
+    li{
+        border-bottom-color: black;
+        border-style: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    img#logo{
+        width: 50%;
+    }
+    a#logo{
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        flex-direction: column;
+        align-items:center;
+    }
+
 }

@@ -35,6 +35,14 @@ nav{
 
 /* INDEX */
 
+div.carousel.slide{
+    margin: 100px;
+}
+img.d-block.w-100{
+    border-radius: 15px;
+    border-style: ridge;
+    border-color: black;
+}
 #pasoapaso{
     border-style: solid;
     border-color: black;
@@ -150,39 +158,27 @@ ul#filtro li{
 
 /* FORMULARIO */
 
-label{
-    padding: 10px;
-    position: relative;
-    top: 30px;
+form.altaperfil{
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 30px;
+    justify-items: end;
 }
+
 form{
     background-color: grey;
-    width: 500px;
-    height: 500px;
     border-style: solid;
     border-color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
     padding: 20px;
     margin: 100px auto;
 }
 
 input{
     display: block;
-    margin: 10px;
-    margin-left: 250px;
 }
-
-input#comprador{
-    position: relative;
-    top: 25px;
-}
-
-input#vendedor{
-    position: relative;
-    top: 25px;
-}
-
 textarea{
     margin-left: 250px;
 }
@@ -195,7 +191,8 @@ textarea{
 }
 
 #BotonAlta{
-    margin-left: 400px;
+    width: 50%;
+    grid-column: 2/3;
 }
 
 /* TERMINA FORMULARIO */
@@ -307,6 +304,11 @@ main.perfil input{
     footer{
         flex-direction: column;
         align-items:center;
+    }
+
+    #BotonAlta{
+        width: 100%;
+        grid-column: 1/3;
     }
 
 }

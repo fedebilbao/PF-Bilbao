@@ -4,17 +4,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name = "description" content="Web destinada a armado de eventos">
+        <meta name = "description" content="TRITON es un sitio web que ofrece servicios para planificar eventos personalizados. Ofrecemos todo lo necesario para hacer de tu evento un éxito">
+        <meta name="keywords" content="EVENTO,CUMPLEAÑOS,FESTEJO,FIESTA,CASAMIENTO,ORGANIZACION,COMIDA,SALON,SERVICIO,PERSONALIZADO">
         <link rel="shortcut icon" href="./imagenes/LOGO TRITON CIRCULAR PNG.png" type="image/x-icon">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/estilo.css">
-        <title>Triton</title>
+        <title>Plataforma de eventos | Triton</title>
     </head>
 <body>
 
     <header>
 
-        <a href="./perfil.html" id="perfil">
+        <a href="./pages/perfil.html" id="perfil">
             <img src="./imagenes/perfil.png" alt="perfil"; id="perfil">
         </a>
         <a href="./index.html" id="logo">
@@ -23,11 +24,11 @@
 
         <nav>
             <ul>
-                <li><a href="./altaperfil.html">Alta Perfil</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./pages/altaperfil.html">Alta Perfil</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
                 <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./nuevoevento.html">Nuevo Evento</a></li>
-                <li><a href="./perfil.html">Perfil</a></li>
+                <li><a href="./pages/nuevoevento.html">Nuevo Evento</a></li>
+                <li><a href="./pages/perfil.html">Perfil</a></li>
             </ul>
         </nav>
     </header>
@@ -40,26 +41,27 @@
                <h2> - En TRITON vas a poder crear tu evento a medida, vas a tener miles de opciones.</h3>
                <h2> - Podes pedir el servicio completo o lo que te esta faltando para completar tu festejo.</h3>
                <h2> - También podes crear una cuenta como vendedor y ofrecer tus productos y servicios para eventos!</h3>
-               <a href="./nuevoevento.html"><img src="./imagenes/paso a paso.png" alt="paso a paso"></a>
+               <div>
+                <img src="./imagenes/elegir fecha.svg" alt="fecha de evento" id="imagenpaso1">
+                <h3 id="paso1">1. Elegí la fecha del evento</h3>
+                 <img src="./imagenes/flecha.svg" alt="flecha" class="flecha" id="flecha1">
+                 <img src="./imagenes/carrito de compras.svg" alt="carrito de compras" id="imagenpaso2">
+                 <h3 id="paso2">2. Agregá al carrito</h3>
+                 <img src="./imagenes/flecha.svg" alt="flecha" class="flecha" id="flecha2">
+                 
+                 <img src="./imagenes/usuario con carrito.svg" alt="persona con carrito de compras" id="imagenpaso3">
+                 <h3 id="paso3">3. Creá tu usuario</h3>
+                 <img src="./imagenes/flecha.svg" alt="flecha" class="flecha" id="flecha3">
+                 <img src="./imagenes/check list.svg" alt="check list" id="imagenpaso4">
+                 <h3 id="paso4">4. Chequeá tu compra</h3>
+                 <img src="./imagenes/flecha.svg" alt="flecha" class="flecha" id="flecha4">
+                 <img src="./imagenes/tarjeta de credito.svg" alt="tarjetas" id="imagenpaso5">
+                 <h3 id="paso5">5. Aboná y disfrutá de tu evento!</h3>
+               </div>
            </div>
     
-        <section class="inicio">              
-               <img src="./imagenes/event planning.png" alt="planeamiento de evento" class="imagen1">
-               <img src="./imagenes/eventos-sociales.jpg" alt="evento" class="imagen2">
-               <img src="./imagenes/namesnack-event-planning-business-names-6000x4000-20200728.jpeg" alt="evento" class="imagen3">
-
-            <div id="comentarios">
-                <img src="./imagenes/perfil.png" alt="" >
-                <h3>Lo usé por primera vez para el cumpleaños de mi hijo y fue una experiencia unica, lo recomiendo para todo tipo de eventos! </h3>
-                <img src="./imagenes/perfil.png" alt="" >
-                <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus laudantium, eligendi possimus, pr</h3>
-                <img src="./imagenes/perfil.png" alt="" >
-                <h3>Lorem ipsum dolor, </h3>
-            </div>
-        </section>
-
+           
         <div id="carouselExample" class="carousel slide">
-          <h2>Nuestros eventos</h2>
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="./imagenes/evento1.jpg" class="d-block w-100" alt="...">
@@ -81,16 +83,31 @@
           </button>
         </div>
         
+        <section class="inicio">              
+               <img src="./imagenes/evento28.jpg" alt="planeamiento de evento" class="imagen1">
+               <img src="./imagenes/evento26.jpg" alt="evento" class="imagen2">
+               <img src="./imagenes/evento32.jpg" alt="evento" class="imagen3">
+
+            <div id="comentarios">
+                <img src="./imagenes/perfil.png" alt="" >
+                <h3>Tuvimos una reunión para filmar una pelicula y contratamos el salón en Triton, se encontraba muy limpio y nos atendieron de primera </h3>
+                <img src="./imagenes/perfil.png" alt="" >
+                <h3>Compramos la mesa dulce para mi cumpleaños y estaba todo riquisimo, llego en perfecto estado y estaba hermoso</h3>
+                <img src="./imagenes/perfil.png" alt="" >
+                <h3>Lo usé por primera vez para el cumpleaños de mi hijo y fue una experiencia unica, lo recomiendo para todo tipo de eventos! </h3>
+            </div>
+        </section>
+
     </main>
 
     <hr>
 
     <footer>
-        <h5>Telefono: 1111-1111</h5>
-        <h5>Mail: info@triton.com.ar</h5>
-        <h5 class="redes">Facebook <img src="./imagenes/facebook.png" alt="" ></h5>
-        <h5 class="redes">Instagram <img src="./imagenes/instagram.png" alt=""></h5>
-        <h5 class="redes">Whatsapp <img src="./imagenes/whatsapp.png" alt=""></h5>
+        <h5>Telefono: 1111-1111 <img src="./imagenes/telefono.svg" alt="nuestro telefono" ></h5>
+        <h5>Mail: info@triton.com.ar <img src="./imagenes/mail.svg" alt="nuestro mail" ></h5>
+        <h5 class="redes">Facebook <img src="./imagenes/facebook.svg" alt="Facebook" ></h5>
+        <h5 class="redes">Instagram <img src="./imagenes/instagram.svg" alt="Instagram"></h5>
+        <h5 class="redes">Whatsapp <img src="./imagenes/whatsapp.svg" alt="Whatsapp"></h5>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>

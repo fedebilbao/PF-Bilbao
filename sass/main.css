@@ -279,6 +279,7 @@ main.nuevoevento {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  align-items: center;
 }
 main.nuevoevento div.nuevoevento {
   grid-column: 1/2;

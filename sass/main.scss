@@ -335,24 +335,27 @@ footer{
 /* INICIO PERFIL */
 main.perfil{
     background-color: grey;
+    display: grid;
+    gap: 60px;
+    justify-content: center;
     img{
-        width: 100px;
-        position: relative;
-        left: 150px;
+        width: 200px;
+        justify-self: center;
     }
     h1{
         display: block;
         background-color: #e2f0fb;
         padding: 20px;
+        text-align: center;
+        justify-self: normal;
     }
     h2{
-        margin: 50px;
+        display: inline;
     }
     input{
         width: 200px;
         font-size: xx-large;
-        position: relative;
-        right: 150px;
+        justify-self: center;
     }
 
 }

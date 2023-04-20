@@ -417,4 +417,76 @@ div.EventosImagenes {
     grid-column: 1/2;
     grid-row: 3/4;
   }
+  main div#pasoapaso div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: start;
+    background-color: white;
+    margin: 10px;
+    gap: 10px;
+  }
+  main div#pasoapaso div img {
+    max-width: 100%;
+  }
+  main div#pasoapaso div img.flecha {
+    max-width: 100%;
+  }
+  main div#pasoapaso div h3 {
+    font-size: 30px;
+    margin: 10px;
+  }
+  main div#pasoapaso div #flecha1 {
+    display: none;
+  }
+  main div#pasoapaso div #flecha2 {
+    display: none;
+  }
+  main div#pasoapaso div #flecha3 {
+    display: none;
+  }
+  main div#pasoapaso div #flecha4 {
+    display: none;
+  }
+  main div#pasoapaso div #imagenpaso1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  main div#pasoapaso div #imagenpaso2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  main div#pasoapaso div #imagenpaso3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  main div#pasoapaso div #imagenpaso4 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  main div#pasoapaso div #imagenpaso5 {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  main div#pasoapaso div #paso1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  main div#pasoapaso div #paso2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  main div#pasoapaso div #paso3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  main div#pasoapaso div #paso4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+  main div#pasoapaso div #paso5 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
 }/*# sourceMappingURL=main.css.map */
